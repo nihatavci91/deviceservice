@@ -11,7 +11,6 @@ class PurchaseController extends Controller
     public function store(Request $request,PurchaseManager $purchaseManager)
     {
         $validated = $request->validate([
-           'uid' => 'string|required',
             'receipt' => 'string|required'
         ]);
 

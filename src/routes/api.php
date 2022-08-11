@@ -25,7 +25,6 @@ Route::group([
     Route::post('refresh', 'Api\AuthController@refresh')->name('auth.refresh');
     Route::post('register', 'Api\AuthController@register')->name('auth.register');
 
-
 });
 
 Route::group(['middleware' => ['auth:api']],function (){

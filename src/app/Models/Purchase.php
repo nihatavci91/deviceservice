@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Purchase extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['receipt','device_id','expired_at','user_id','status'];
 }

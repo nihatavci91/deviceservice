@@ -28,7 +28,7 @@ services:
       - ./src/:/var/www
       - ./nginx/conf.d/:/etc/nginx/conf.d/
     networks:
-      - devicedb-network
+      - device-network
 
   #MySQL Service
   db:
@@ -45,7 +45,7 @@ services:
     volumes:
       - dbdata:/var/lib/mysql
     networks:
-      - devicedb-network
+      - device-network
 
   redis:
     image: redis:latest
@@ -53,11 +53,11 @@ services:
       - 6379:6379
     restart: always
     networks:
-      - devicedb-network
+      - device-network
 
 #Docker Networks
 networks:
-  devicedb-network:
+  device-network:
     driver: bridge
 
 #Volumes
