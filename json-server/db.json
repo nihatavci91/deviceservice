@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "title-one",
+      "author": "nihatavci"
+    },
+    {
+      "id": 2,
+      "title": "title-two",
+      "author": "nihatavci"
+    },
+    {
+      "id": 3,
+      "title": "title-three",
+      "author": "nihatavci"
+    },
+    {
+      "id": 4,
+      "title": "title-four",
+      "author": "nihatavci"
+    },
+    {
+      "title": "title-NEW",
+      "author": "nihatavci-NEW",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "comments here",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some other comments here",
+      "postId": 4
+    }
+  ],
+  "profile": [
+    {
+      "name": "nihatavci"
+    },
+    {
+      "name": "yumurtacimustafa"
+    },
+    {
+      "name": "myumurtaci"
+    }
+  ]
+}
